@@ -1,0 +1,143 @@
+*{
+    font-family: 'Courier New';
+}
+
+h1 , h3{
+    color: #b92b27;
+}
+
+#login{   /*id selecter */ 
+    background-color: white;  
+}
+
+#signup{  /*id selecter */
+    background-color: #b92b27;  
+    color: white;
+}
+
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+#myid p{
+    color: green;
+}
+
+/* descendant selector */
+
+.post a{
+    color: black;
+    background-color: yellow;
+}
+
+nav ul li a{
+    color: saddlebrown;
+}
+
+/* Adjacent Sibling Combinator --> elements that come after any elments or means there is no parent class.*/
+
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: black;
+    color: blueviolet;
+}
+
+/* child combinator --> Selects all buttons which are direct children of spans*/
+
+div > input{
+    background-color: darksalmon;
+}
+
+/* Attribute Selecter --> Selects Elements based on the presence or value of a given attribute */
+
+input[type ="text"]{
+    color: red;
+}
+
+input[type = "password"]{
+    color: green;
+}
+
+input[type]{
+    background-color: grey;
+}
+
+/* Pseudo class --> A keyword added to a selector that specifies a special state of the selected elements */
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+button:active{
+background-color: pink;
+color: black;
+}
+
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+input[type = "radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n){
+    background-color: wheat;
+}
+
+/* Pseudo Elements --> A keyword added to a selector that lets you style a specific part the selected elements */
+
+h1::first-letter{
+    color: green;
+}
+p::first-line{
+    color: darkcyan;
+}
+p::selection{
+    background-color: greenyellow;
+}
+
+/* what is cascade in css?
+The CSS cascade algorithm's job is to select CSS declarations in order to determine the correct values for CSS properties
+And it works only when selector is same
+
+hamesha baad wale ko adapt kregaa
+*/
+
+h3{
+    background-color: red;
+}
+
+h3{
+    background-color: green;
+}
+
+/* Selector Specificity
+What is Specificity?
+Specificity is an algo. that calculates the weight that is applied to given CSS Declaration
+
+ 1)->order--> id > class(attribute and pseudo class) > element(Pseudo element)
+ 2-> More Selectors > Less Selectors
+ 3--> If Specificity Same --> Cascading (after thing gets priority)    
+ 4)--> If inline style is there then the priority will be --> Inline Style > id > class > element          
+    
+*/
+
+/* !important
+To show the most specific thing in document
+*/
+
+h3{
+    background-color: crimson !important;
+}

@@ -1,0 +1,21 @@
+h1{
+    display: inline;
+    background-color: pink;
+}
+
+span{
+    /* background-color: pink; */
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px; /*for span, padding will set only for left and right*/
+    margin: 20px;  /*for span, margin will set only for left and right*/
+}
+
+div{
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px; 
+    margin: 20px;
+}

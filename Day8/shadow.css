@@ -1,0 +1,14 @@
+/* Box Shadow 
+It adds shadow effects around an element's frame
+Box-shadow: x-effect|Y-effect|blur-radius|color
+*/
+
+
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    margin: 10px auto;  /*--auto takes block to centre*/
+    box-shadow: 2px 2px 8px black;
+}

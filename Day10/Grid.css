@@ -1,0 +1,41 @@
+.Container{
+    width: 600px;
+    height: 300px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    display: grid;
+   /* grid-template-rows: 50px 50px 50px 50px 50px;  /* To create rows*/
+    /*grid-template-columns: auto auto auto auto auto; /* To create Columns*/
+    
+    grid-template-rows: repeat(3,1fr); /* Repeat is used to divide all available space*/
+    grid-template-columns: repeat(3,1fr);
+
+    row-gap: 10px;  /* They Defines the gaps between the lines*/
+    column-gap: 10px;
+    grid-gap: 15px 15px; /* row gap column gap*/
+
+    justify-items: start;     /* It arrange all the items in container accordingly -- Horizontally */
+    /* justify-items: end;
+    justify-items: center */
+    align-items: start;       /* It arrange all the items in container accordingly -- Vertically */
+    /* align-items: end;
+    align-items: center; */
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.one{
+    grid-column-start: 1; /* Defines an item's starting & ending position inside the column */
+    grid-column-end: 3;
+}
+
+.two{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

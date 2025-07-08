@@ -1,0 +1,55 @@
+/* The position CSS property sets how an element is positioned in a document.
+The top, right, botto, and left properties determine the final location of positioned elements.
+1) static-->the top, right, bottom, and left and z-index properties 
+have no effect. This is the default value.
+
+2) relative --> the offset is relative to itself based on the values
+ of the top, right, bottom, and left.
+
+3) absolute --> The element is removed from the normal document flow,
+   and no space is created for the element in the page layout.
+ It is positioned relative to its closest positioned ancestor, 
+ if any, otherwise, it is placed relative to the initial containing block.
+
+4)fixed--> The element is removed from the normal document flow, 
+   and no space is created for the element in the page layout.
+  It is positioned relative to the initial containing block established by the viewport.
+*/
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+    /* if position: static; then there will be no change  */
+}
+
+#relative{
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#absolute{
+    background-color: yellow;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#fixed{
+    background-color: yellow;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
